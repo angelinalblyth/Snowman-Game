@@ -1,10 +1,14 @@
 class Player
 
-  attr_reader :name, :chances
+  attr_reader :name, :lives
 
-  def initialize(name, chances)
+  def initialize(name)
     @name = name
-    @chances = chances
+    @lives = 6
+  end
+
+  def lose_a_life
+    @lives -= 1
   end
 
 end

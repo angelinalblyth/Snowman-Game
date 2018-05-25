@@ -6,7 +6,7 @@ require_relative("../game")
 class GameTest < MiniTest::Test
 
   def setup
-    @game = Game.new("Player", "HiddenWord",)
+    @game = Game.new("Player", "Hidden_Word",)
   end
 
   def test_game_has_player
@@ -14,7 +14,7 @@ class GameTest < MiniTest::Test
   end
 
   def test_game_has_hidden_word
-    assert_equal("HiddenWord", @game.hiddenword)
+    assert_equal("Hidden_Word", @game.hidden_word)
   end
 
 
@@ -24,6 +24,6 @@ class GameTest < MiniTest::Test
 
   #Display hiddenword as * if the letter in the string has not been guessed. If guessed print out the word, with the guessed letter visible and the rest still as *.
 
-  #Each letter guessed, removed a life from chances. If chances = 0 then player has no more guesses. 
+  #Each letter guessed, removed a life from chances. If chances = 0 then player has no more guesses.
 
 end
